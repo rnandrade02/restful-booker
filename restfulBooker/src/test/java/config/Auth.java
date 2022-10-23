@@ -1,9 +1,7 @@
 package config;
 
-import Utils.Constantes;
-import io.cucumber.java.it.Ma;
+import Utils.ConstantesPath;
 import io.restassured.http.ContentType;
-import io.restassured.mapper.ObjectMapperType;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +9,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class Auth {
-    Constantes constantes;
+    ConstantesPath constantes;
 
 
     public String gerarToken(){
