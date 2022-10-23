@@ -3,7 +3,7 @@ package request;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Date;
+import java.util.Map;
 
 @Getter
 @Setter
@@ -26,15 +26,7 @@ public class RequestReserva {
 
     @Getter
     @Setter
-    private String bookingdates;
-
-    @Getter
-    @Setter
-    private Date checkin;
-
-    @Getter
-    @Setter
-    private Date checkout;
+    private Map bookingdates;
 
     @Getter
     @Setter
