@@ -2,6 +2,6 @@ package Utils;
 
 public class ConstanteSchema {
 
-    public static String LISTAR_ID_LIVROS = "schemas/listarIdLivrosSchema.json";
-    public static String BUSCAR_LIVRO_ID = "schemas/buscarLivroId.json";
+    public static String LISTAR_RESERVA_ID = "schemas/listarIdReservaSchema.json";
+    public static String BUSCAR_RESERVA_ID = "schemas/buscarReservaId.json";
 }

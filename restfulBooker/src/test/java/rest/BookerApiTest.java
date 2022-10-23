@@ -3,9 +3,7 @@ package rest;
 import Utils.ConstantesPath;
 import config.Auth;
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
-import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
@@ -15,17 +13,17 @@ public class BookerApiTest {
     String token = new Auth().gerarToken();
 
 
-    public ValidatableResponse consultarLivroId(String idLivro){
+    public ValidatableResponse consultarReservaId(String idReserva){
        ValidatableResponse response =  given()
                 .header("Authorization",token)
                 .contentType(ContentType.JSON)
                 .when()
-                .get(constantes.URL_BASE+constantes.BOOKING_ID + idLivro)
+                .get(constantes.URL_BASE+constantes.BOOKING_ID + idReserva)
                 .then();
        return response;
     }
 
-    public int buscarIdLivro(){
+    public int buscarIdReserva(){
             int idLivro = given()
                 .header("Authorization",token)
                 .contentType(ContentType.JSON)
